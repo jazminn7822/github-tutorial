@@ -29,11 +29,11 @@ Inorder to able to use https://ide.cs50.io/, you will have to create an account 
 1. First, **create a directory**. You can name it first-repo or whatever you'd like. Do this by typing in `mkdir "first-repo"`
 2. To make `mkdir "first-repo"` into a repository, you need to **go into the directory** by doing `cd first-repo` and then **initialize git**. So, after typing in `mkdir "first-repo"` you need to type in `cd "first-repo"` and then `git init`. It should look like this...
 
-* `mkdir "first-repo"`
-* `cd "first-repo"`
-* `git init`
-
-make some edits, add commit and push
+         * `mkdir first-repo`
+         * `cd first-repo`
+         * `git init`
+* It should now say `~/first repo/ (master)`
+Make some edits, add commit and push
 
 Congrats, you've just made your very first repository! :wink:
 
