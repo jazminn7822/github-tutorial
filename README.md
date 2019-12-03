@@ -20,7 +20,7 @@ Inorder to able to use https://ide.cs50.io/, you will have to create an account 
 3. **Create an account** (_If you are student from HSTAT, you can use your HSTAT email._)
 4. After you have created an account, go to https://github.com/hstatsep/ide50 and follow the steps stated there.
    * What is an SSH key and why do we need to set up an SSH key between cs50 and GitHub?
-     * An SSH key is a way for your local and remote to be able to connect. In this case the ssh key was generated to use it as a way to identify yourself without having you type in your username and password every single time. This is why we need to set up an SSH key, so that we can log into our ide.cs50 without a password.
+     * An SSH key is a way for your local and remote to be able to connect. In this case the SSH key was generated to use it as a way to identify yourself without having you type in your username and password every single time you will be making a commit.
 
 
 
