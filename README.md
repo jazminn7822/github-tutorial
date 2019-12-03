@@ -73,10 +73,24 @@ Now that we have a README.md file, we can start to type in this file any text we
    * Copy those 2 lines of code and then paste them into your command line in the CS50 IDE. Make sure you are in your first-repo.
    * Now refresh the page and you should see (**insert image**)
    * Now repeat this cycle by doing git add, git commit, and git push.
-   
+
 Hooray, you've learned how to do these three commands!
 
 
 
 ---
 ## Rolling Back Changes
+In order to dicard any changes we would have to do the command `git checkout --<file>...`
+##### How do you undo an edit?
+* To undo a edit you have to type in the command `git checkout --filename`
+
+##### How do you undo something you have added to the stage?
+* To undo something you have added to the stage you have to type in `git reset HEAD filename`.
+
+##### How do you undo a commit?
+* To  undo a commit you would need to type in the command line, `git reset --soft HEAD~1`. This command will delete the last commit you've made without changing your working directory.
+##### How do you undo a commit, something you've added to the stage, and an edit?
+* By doing `git reset --hard HEAD~1` you will be deleting the things you've just added to the stage any any uncommited changes.
+*
+#####  How do you undo something that you have pushed already?
+*  To undo a push commit you can do `git revert` to remove your past commits. You could also do `git reset --hard HEAD~1` to remove 1 or multiple commits you have made.
