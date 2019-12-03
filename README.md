@@ -80,7 +80,7 @@ Hooray, you've learned how to do these three commands! :thumbsup:
 
 ---
 ## Rolling Back Changes
-In order to dicard any changes we would have to do the command `git checkout --<file>...`
+
 ##### How do you undo an edit?
 * To undo a edit you have to type in the command `git checkout --filename`.
 
@@ -93,4 +93,4 @@ In order to dicard any changes we would have to do the command `git checkout --<
 * By doing `git reset --hard HEAD~1` you will be deleting the things you've just added to the stage and any uncommited changes.
 
 #####  How do you undo something that you have pushed already?
-*  To undo a push commit you can do `git revert`. You could also do `git reset --hard HEAD~1` to remove 1 or multiple commits you have made in the past.
+*  To undo a pushed commit you can do `git revert`. For instance, `git revert c79856b d689a efsg8i`. This command will delete the most recent commit, the commit before that, and the third- most recent commit.  You could also do `git reset --hard HEAD~1` to remove 1 or multiple commits you have made in the past.
