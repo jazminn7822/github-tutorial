@@ -90,7 +90,7 @@ In order to dicard any changes we would have to do the command `git checkout --<
 ##### How do you undo a commit?
 * To  undo a commit you would need to type, `git reset --soft HEAD~1`. This command will delete the last commit you've made and reset to a past commit you would like back.
 ##### How do you undo a commit, something you've added to the stage, and an edit?
-* By doing `git reset --hard HEAD~1` you will be deleting the things you've just added to the stage any any uncommited changes.
+* By doing `git reset --hard HEAD~1` you will be deleting the things you've just added to the stage any uncommited changes.
 
 #####  How do you undo something that you have pushed already?
 *  To undo a push commit you can do `git revert`. You could also do `git reset --hard HEAD~1` to remove 1 or multiple commits you have made in the past.
