@@ -60,8 +60,8 @@ Now that we have a README.md file, we can start to type in this file any text we
 
   * Open up a new tab and go to http://github.com/
   * Go to the top left corner and locate the green buton that has a liitle book and reads "New", then click on it.
-  * You should now see this on your screen  
-  * Type in the repository name. For this purpose, type in _first-repo_ **exactly** the same as you have it named.  
+  * You should now see this on your screen
+  * Type in the repository name. For this purpose, type in _first-repo_ **exactly** the same as you have it named.
   * When you're done, you can include a description if you would like, but you don't have to.
   * Skip the last step, because we already have a README file in our first-repo that we made in our ide.cs50.
   * Click on the green button _Create Repository_
@@ -90,7 +90,7 @@ In order to dicard any changes we would have to do the command `git checkout --<
 ##### How do you undo a commit?
 * To  undo a commit you would need to type, `git reset --soft HEAD~1`. This command will delete the last commit you've made and reset to a past commit you would like back.
 ##### How do you undo a commit, something you've added to the stage, and an edit?
-* By doing `git reset --hard HEAD~1` you will be deleting the things you've just added to the stage any uncommited changes.
+* By doing `git reset --hard HEAD~1` you will be deleting the things you've just added to the stage and any uncommited changes.
 
 #####  How do you undo something that you have pushed already?
 *  To undo a push commit you can do `git revert`. You could also do `git reset --hard HEAD~1` to remove 1 or multiple commits you have made in the past.
