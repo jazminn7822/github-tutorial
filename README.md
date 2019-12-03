@@ -43,7 +43,7 @@ Now, lets make a README.md file inside  so that we are able to type in any text 
      * To save this file, you can either click on File > Save or command + S (On Mac) or Ctrl + S (On a PC)  (_Both options should lead you to the red dot changing to the color green_)
 
 
-Congrats, you've just made your very first repository AND file! :wink:
+Congrats, you've just made your very first repository AND file! :clap:
 
 ---
 ## Workflow & Commands
@@ -60,8 +60,8 @@ Now that we have a README.md file, we can start to type in this file any text we
 
   * Open up a new tab and go to http://github.com/
   * Go to the top left corner and locate the green buton that has a liitle book and reads "New", then click on it.
-  * You should now see this on your screen  (**paste image**)
-  * Type in the repository name. For this purpose, type in _first-repo_ **exactly** the same as you have it named.  (**paste image**)
+  * You should now see this on your screen  
+  * Type in the repository name. For this purpose, type in _first-repo_ **exactly** the same as you have it named.  
   * When you're done, you can include a description if you would like, but you don't have to.
   * Skip the last step, because we already have a README file in our first-repo that we made in our ide.cs50.
   * Click on the green button _Create Repository_
@@ -71,10 +71,10 @@ Now that we have a README.md file, we can start to type in this file any text we
        *  What does the command `git push -u origin master` mean?
             *  This command is done inorder to send any changes or edits we've made from our local CS50 IDE to our remote repo which is on GitHub. The -u means upstream which means that it will remember to push our changes to our remote repo whenever we type in `git push` in the future.
    * Copy those 2 lines of code and then paste them into your command line in the CS50 IDE. Make sure you are in your first-repo.
-   * Now refresh the page and you should see (**insert image**)
-   * Now repeat this cycle by doing git add, git commit, and git push.
+   * Now go back to github and refresh the page and now you should see "This is my first repository."
+   * Now keep adding any text you'd like and repeat the steps you've done already by doing git add, git commit, and git push.
 
-Hooray, you've learned how to do these three commands!
+Hooray, you've learned how to do these three commands! :thumbsup:
 
 
 
@@ -82,15 +82,15 @@ Hooray, you've learned how to do these three commands!
 ## Rolling Back Changes
 In order to dicard any changes we would have to do the command `git checkout --<file>...`
 ##### How do you undo an edit?
-* To undo a edit you have to type in the command `git checkout --filename`
+* To undo a edit you have to type in the command `git checkout --filename`.
 
 ##### How do you undo something you have added to the stage?
 * To undo something you have added to the stage you have to type in `git reset HEAD filename`.
 
 ##### How do you undo a commit?
-* To  undo a commit you would need to type in the command line, `git reset --soft HEAD~1`. This command will delete the last commit you've made without changing your working directory.
+* To  undo a commit you would need to type, `git reset --soft HEAD~1`. This command will delete the last commit you've made and reset to a past commit you would like back.
 ##### How do you undo a commit, something you've added to the stage, and an edit?
 * By doing `git reset --hard HEAD~1` you will be deleting the things you've just added to the stage any any uncommited changes.
-*
+
 #####  How do you undo something that you have pushed already?
-*  To undo a push commit you can do `git revert` to remove your past commits. You could also do `git reset --hard HEAD~1` to remove 1 or multiple commits you have made.
+*  To undo a push commit you can do `git revert`. You could also do `git reset --hard HEAD~1` to remove 1 or multiple commits you have made in the past.
