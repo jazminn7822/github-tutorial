@@ -52,8 +52,8 @@ Congrats, you've just made your very first repository **and** file! :clap:
 Now that we have a README.md file, we can start to type in this file any text we would like.
 1. Make sure that we are still inside the blank README.md file.
 2. Lets type in "This is my first repository."
-![GitHub Logo](/images/firstrepoterminal.png)
-Format: ![Alt Text](url
+[](/images/firstrepoterminal.png)
+
 3. Now that we have some text in the README.md file, lets click on the first-repo tab. **insert image**
 4. Now you should be in the terminal, type in `git add .` This command adds the file README.md  and its edits to the stage. This command can still be used even if you aren't sure of adding certain files or edits, now or in the future because you are just telling Git what you would like to be recorded or commited when you do another command which will be in the next step.
 5. Now that we have added everything to the stage, lets commit it. Type in `git commit -m "add text to first-repo"` What this command does is it "captures a photo of the stage" or records the change you have done before by naming it "add text to first-repo". When writing commit messages, you should always use small phrases that are in the present-tense form. In the future, you want to get something back that you maybe deleted in the past, you can type in `git log` to get see all the commits you've done and get the one you'd like back by doing another command which is in the **_Rolling Back Changes_** section.
