@@ -117,4 +117,4 @@ So, after you have cloned and forked someone else's repository, you can decide i
 Lets say you did. Now, how can the owner of the repository see the changes you have made?
 * After having made the edits, you should do `git push`  to push everything to the remote that lives in GitHub.
 * You can go to GitHub and submit a pull request and if your pull request is approved then they would accept the changes.
-* Lets say you were the person receiving the pull requests, you would have to accept the pull request and then just need to type the command `git pull` in your terminal amd that.
+* Lets say you were the person receiving the pull requests, you would have to accept the pull request and then just need to type the command `git pull` in your terminal and that is it.
