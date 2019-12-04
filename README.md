@@ -14,11 +14,11 @@ GitHub is a website that saves your code to the cloud. It is very useful when yo
 
 ---
 ## Initial Setup
-Inorder to able to use https://ide.cs50.io/, you will have to create an account in https://github.com/.
+**_Inorder to able to use https://ide.cs50.io/, you will have to create an account in https://github.com/._**
 1. Go to https://github.com/
-2. click on "**Sign up**" on the top right corner.
-3. **Create an account** (_If you are student from HSTAT, you can use your HSTAT email._)
-4. After you have created an account, go to https://github.com/hstatsep/ide50 and follow the steps stated there.
+2. Click on "**Sign up**" on the top right corner.
+3. **Create an account** (_If you are a student from HSTAT, you can use your HSTAT email, but without the `hstat.org`_).
+4. After you have created an account, go to https://github.com/hstatsep/ide50 and follow the steps stated there. (_Do not skip this step. You **need** to go to this website which will help you set up your https://ide.cs50.io/_)
    * What is an SSH key and why do we need to set up an SSH key between cs50 and GitHub?
      * An SSH key is a way for your local and remote to be able to connect. In this case the SSH key was generated to use it as a way to identify yourself without having you type in your username and password every single time you will be making a commit.
 
@@ -26,31 +26,34 @@ Inorder to able to use https://ide.cs50.io/, you will have to create an account 
 
 ---
 ## Repository Setup
-1. First, **create a directory**. You can name it first-repo or whatever you'd like. Do this by typing in `mkdir "first-repo"`
-2. Now, to make `mkdir "first-repo"` into a repository, you need to **go into the directory** by doing `cd first-repo` and then `git init` to **initialize git**. So, after typing in `mkdir "first-repo"` you need to type in `cd "first-repo"` and then `git init`. It should look like this...
+1. Make sure you are in your https://ide.cs50.io/
+2. First, **create a directory**. You can name it first-repo for this purpose or if you'd really like to name it otherwise, you can go right ahead. So, to create a directory named **first-repo** type `mkdir "first-repo"`in your terminal. `mkdir` means make directory. Not to complicated, right? :smile_cat:
+3. Now, to make `mkdir "first-repo"` into a repository, you **need** to **go into the directory**. To do this, you need to type in the command `cd first-repo`. After you have typed this command, type in `git init` to **initialize git**. So, after typing in `mkdir "first-repo"` you need to type in `cd "first-repo"` and then `git init`. It should look like this :point_down:
 
          * `mkdir first-repo`
          * `cd first-repo`
          * `git init`
 * It should now say `~/first repo/ (master)`
-Now, lets make a README.md file inside  so that we are able to type in any text we'd like in the README.md file.
+Now, lets make a README.md file inside this repository, so that we are able to type in any text we'd like in the README.md file.
 
-  1. Type in `touch README.md` to create a new blank file inside our directory named README.md
-          It should look like `~/first repo/ (master) $ touch README.md`
+  1. Type in `touch README.md` to create a new blank file named README.md inside our `first-repo` repository.
+          It should look like this: `~/first repo/ (master) $ touch README.md`
   2. Then, type in `c9 README.md` to go open this file in a new tab in your ide.cs50
-          It should look like  `~/first repo/ (master) $ c9 README.md`
-  3. You should now see 2 tabs next to eachother and you should be in the blank README.md file.
-     * To save this file, you can either click on File > Save or command + S (On Mac) or Ctrl + S (On a PC)  (_Both options should lead you to the red dot changing to the color green_)
+          It should look like this: `~/first repo/ (master) $ c9 README.md`
+  3. You should now see 2 tabs next to eachother (The terminal tab and the README.md file) and you should have been automatically forwarded to the blank README.md file.
+     * To save this file, you can either click on File > Save or command + S (On Mac) or Ctrl + S (On a PC)  (_Both options should have changed the color of the dot right next to the README.md from red to green_) 
 
 
-Congrats, you've just made your very first repository AND file! :clap:
+Congrats, you've just made your very first repository **and** file! :clap:
 
 ---
 ## Workflow & Commands
 
 Now that we have a README.md file, we can start to type in this file any text we would like.
-1. Make sure that we are inside the blank README.md file.
+1. Make sure that we are still inside the blank README.md file.
 2. Lets type in "This is my first repository."
+![GitHub Logo](/images/firstrepoterminal.png)
+Format: ![Alt Text](url
 3. Now that we have some text in the README.md file, lets click on the first-repo tab. **insert image**
 4. Now you should be in the terminal, type in `git add .` This command adds the file README.md  and its edits to the stage. This command can still be used even if you aren't sure of adding certain files or edits, now or in the future because you are just telling Git what you would like to be recorded or commited when you do another command which will be in the next step.
 5. Now that we have added everything to the stage, lets commit it. Type in `git commit -m "add text to first-repo"` What this command does is it "captures a photo of the stage" or records the change you have done before by naming it "add text to first-repo". When writing commit messages, you should always use small phrases that are in the present-tense form. In the future, you want to get something back that you maybe deleted in the past, you can type in `git log` to get see all the commits you've done and get the one you'd like back by doing another command which is in the **_Rolling Back Changes_** section.
@@ -93,4 +96,4 @@ Hooray, you've learned how to do these three commands! :thumbsup:
 * By doing `git reset --hard HEAD~1` you will be deleting the things you've just added to the stage and any uncommited changes.
 
 #####  How do you undo something that you have pushed already?
-*  To undo a pushed commit you can do `git revert`. For instance, `git revert c79856b d689a efsg8i`. This command will delete the most recent commit, the commit before that, and the third- most recent commit.  You could also do `git reset --hard HEAD~1` to remove 1 or multiple commits you have made in the past.
+*  To undo a pushed commit you can do `git revert`. For instance,`git revert c79856b d689a efsg8i`. This command will delete the most recent commit, the commit before that, and the third-most recent commit. You could also do `git reset --hard HEAD~1` to remove 1 or multiple commits you have made in the past.
